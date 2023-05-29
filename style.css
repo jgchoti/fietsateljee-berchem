@@ -1,0 +1,168 @@
+:root {
+  --primary-color: darkolivegreen;
+  --accent-color: #ffcc66;
+  --main-bg-color: #f5f5f5;
+  --secondary-color: #6699cc;
+  --heading-font-family: "Grand Hotel", cursive;
+  --font-family: "Lato", sans-serif;
+}
+body {
+  font-family: var(--font-family);
+  letter-spacing: 2px;
+}
+a {
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-family: var(--font-family);
+}
+footer p {
+  font-size: 14px;
+  padding: 0 50px;
+  font-weight: 100;
+}
+footer i {
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: 20px;
+  background-color: var(--main-bg-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+footer i:hover {
+  color: var(--accent-color);
+  background-color: var(--secondary-color);
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+i {
+  margin-right: 30px;
+  font-size: 20px;
+}
+.hero {
+  padding-top: 130px;
+  padding-bottom: 100px;
+  text-align: center;
+  background-color: var(--main-bg-color);
+}
+.hero h1 {
+  font-family: var(--heading-font-family);
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 85px;
+  color: var(--secondary-color);
+}
+.hero h2 {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 30px;
+  color: var(--secondary-color);
+}
+.hero p {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 25px;
+  color: var(--primary-color);
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+
+.btn-branding {
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--primary-color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--primary-color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 24px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-branding:hover,
+.btn-branding:focus-visible {
+  --_p: 0px;
+  outline-color: var(--primary-color);
+  outline-offset: 0.05em;
+  background-color: var(--accent-color);
+}
+
+.btn-branding:active {
+  background: var(--primary-color);
+  color: var(--accent-color);
+}
+.logo {
+  height: 60px;
+  margin-right: 30px;
+}
+.nav-link {
+  margin-right: 30px !important;
+}
+.contact-box {
+  padding: 30px 90px;
+  margin: 50px 100px;
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
+}
+.contact-box h4 {
+  font-size: 38px;
+  font-family: var(--head-font-family);
+}
+.contact-box p {
+  margin: 0;
+  font-size: 20px;
+}
+.contact-box a {
+  margin-top: 20px;
+}
+.navbar {
+  background-color: var(--main-bg-color) !important;
+}
+@media (max-width: 900px) {
+  footer i {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero h2 {
+    font-size: 18px;
+  }
+  .hero p {
+    font-size: 25px;
+  }
+  .btn-branding {
+    font-size: 18px;
+  }
+  .contact-box {
+    padding: 30px;
+    margin: 15px 20px;
+  }
+  .contact-box h4 {
+    font-size: 24px;
+  }
+  .contact-box p {
+    font-size: 14px;
+  }
+  .contact-box a {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
