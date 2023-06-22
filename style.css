@@ -273,13 +273,42 @@ img.framed {
   text-decoration: none;
 }
 
-.card {
+.contact-card {
   opacity: 0.85;
 }
 
-.card:hover {
+.contact-card:hover {
   transform: translateY(-10px);
   opacity: 1;
+}
+.question-container {
+  background-color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 300 !important;
+  font-family: var(--font-family);
+  border-radius: 5px !important;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.question-container:hover {
+  color: var(--main-bg-color);
+}
+.answer-container p {
+  font-size: 16px;
+  color: var(--accent-color);
+}
+.answer-container a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+.answer-container a:hover {
+  color: var(--main-bg-color);
+}
+.faq-container {
+  margin-bottom: 5px;
+}
+.faq-container p {
+  margin: 0;
 }
 
 @media (max-width: 900px) {
@@ -296,7 +325,7 @@ img.framed {
   }
 
   .hero h2 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 50px;
   }
 
