@@ -90,6 +90,7 @@ footer i:hover {
 .header h1,
 .header p,
 .hero p {
+  text-align: center;
   font-size: 45px;
   line-height: 25px;
   color: var(--main-bg-color);
@@ -260,7 +261,7 @@ img.framed {
 
   .hero p,
   .header h1 {
-    margin: 0 10px 20px;
+    text-align: center;
     line-height: 1;
   }
 
