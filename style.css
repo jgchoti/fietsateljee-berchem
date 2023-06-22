@@ -261,7 +261,7 @@ img.framed {
 
   .hero p,
   .header h1 {
-    text-align: center;
+    font-size: 35px;
     line-height: 1;
   }
 
