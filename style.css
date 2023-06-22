@@ -257,7 +257,10 @@ img.framed {
     font-size: 18px;
     margin-bottom: 50px;
   }
-
+  .hero,
+  .header {
+    width: 100%;
+  }
   .hero p,
   .header h1 {
     margin: 0 10px;
