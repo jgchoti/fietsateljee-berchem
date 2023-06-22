@@ -257,12 +257,13 @@ img.framed {
     font-size: 18px;
     margin-bottom: 50px;
   }
-  .hero p {
-    font-size: 45px;
-  }
+
+  .hero p,
   .header h1 {
+    padding: 0 10px;
     line-height: 1;
   }
+
   .btn-branding {
     font-size: 18px;
   }
