@@ -302,7 +302,7 @@ img.framed {
 
 .answer-container a {
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 .answer-container a:hover {
