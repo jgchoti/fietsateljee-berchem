@@ -131,13 +131,14 @@ footer i:hover {
   transition: 0.3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
   outline-offset: 0.6em;
-  font-size: 24px;
+  font-size: 21px;
   font-family: var(--heading-font-family);
   border: 0;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   text-decoration: none;
+  margin: auto;
 }
 
 .btn-branding:hover,
@@ -263,14 +264,13 @@ img.framed {
   font-size: 22px;
 }
 
-.card-body a {
+.card-body p {
   font-size: 20px;
   color: var(--accent-color);
-  text-decoration: none;
 }
 
-.card-body a:hover {
-  color: var(--main-bg-color);
+.card a {
+  text-decoration: none;
 }
 
 .card {
@@ -319,8 +319,9 @@ img.framed {
   }
 
   .action-box {
-    padding: 30px;
+    padding: 10px 40px 20px;
     margin: 15px 20px;
+    text-align: center;
   }
 
   .action-box h4 {
@@ -332,8 +333,9 @@ img.framed {
   }
 
   .action-box a {
-    margin-top: 10px;
-    font-size: 14px;
+    margin-top: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .map,
