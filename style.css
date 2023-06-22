@@ -260,7 +260,7 @@ img.framed {
 
   .hero p,
   .header h1 {
-    padding: 0 20px;
+    margin: 0 10px;
     line-height: 1;
   }
 
