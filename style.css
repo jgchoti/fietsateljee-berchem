@@ -60,7 +60,7 @@ footer i:hover {
   width: 70px;
 }
 
-.sub-heading h3 {
+.sub-heading h2 {
   font-size: 25px;
   font-family: var(--heading-font-family);
   color: var(--accent-color);
@@ -87,14 +87,6 @@ footer i:hover {
   line-height: 85px;
   color: var(--secondary-color);
   margin-bottom: 40px;
-}
-
-.hero h2 {
-  font-size: 30px;
-  font-weight: 200;
-  line-height: 30px;
-  color: var(--secondary-color);
-  margin-bottom: 90px;
 }
 
 .header h1,
@@ -170,7 +162,7 @@ footer i:hover {
   color: var(--main-bg-color);
 }
 
-.active {
+.active-link {
   color: var(--main-bg-color) !important;
 }
 
@@ -316,7 +308,20 @@ img.framed {
 .faq-container p {
   margin: 0;
 }
+.header-img {
+  width: 100%;
+}
 
+.reveal {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+}
 @media (max-width: 900px) {
   footer a {
     margin: 0 30px;
@@ -330,11 +335,6 @@ img.framed {
     line-height: 1.4;
   }
 
-  .hero h2 {
-    font-size: 20px;
-    margin-bottom: 50px;
-  }
-
   .hero p,
   .header h1 {
     font-size: 35px;
@@ -343,12 +343,16 @@ img.framed {
   .header p {
     font-size: 20px;
   }
-
+  .header-img {
+    margin-top: 30px;
+    margin-bottom: 0;
+    width: 250px;
+  }
   .btn-branding {
     font-size: 18px;
   }
 
-  .sub-heading h3 {
+  .sub-heading h2 {
     font-size: 23px;
     margin-bottom: 10px;
   }
